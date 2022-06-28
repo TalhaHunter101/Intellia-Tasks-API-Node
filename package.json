@@ -1,0 +1,20 @@
+{
+  "name": "intelliatask",
+  "version": "1.0.0",
+  "description": "Intellia Api ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "loadash": "^1.0.0",
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.18",
+    "uuid": "^8.3.2"
+  }
+}
