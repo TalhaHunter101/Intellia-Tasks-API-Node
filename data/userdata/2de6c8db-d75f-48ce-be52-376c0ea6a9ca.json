@@ -1,1 +1,18 @@
-{"UserName":"ABC","UserEmail":"abc@gmail.com","Country":"pakistan","Area":"xyz","Education":[{"JobTitle":"Software Engineer","Company":"Intellai","Country":"Pakistan","City":"Lahore","Status":"Former","Fromdate":"3/4/2019","Todate":"3/4/2022"},{"JobTitle":"Software Engineer Backend","Company":"Empg Labs","Country":"Pakistan","City":"Lahore","Status":"Former","Fromdate":"3/4/2013","Todate":"3/4/2027"}],"Experiences":[]}
+{
+    "UserName": "ABC",
+    "UserEmail": "abc@gmail.com",
+    "Country": "pakistan",
+    "Area": "xyz",
+    "Education": [],
+    "Experiences": [
+        {
+            "JobTitle": "Software Engineer Backend",
+            "Company": "Empg Labs",
+            "Country": "Pakistan",
+            "City": "Lahore",
+            "Status": "Former",
+            "Fromdate": "3/4/2013",
+            "Todate": "3/4/2027"
+        }
+    ]
+}
