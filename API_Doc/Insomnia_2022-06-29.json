@@ -1,0 +1,177 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2022-06-29T07:35:10.245Z",
+    "__export_source": "insomnia.desktop.app:v2022.4.2",
+    "resources": [
+        {
+            "_id": "req_387a4aaecb124b9f9c0541bbdd90fcb6",
+            "parentId": "wrk_3292830b6dc545ceb7793000c3003b29",
+            "modified": 1656485611618,
+            "created": 1656413684368,
+            "url": "http://localhost:3000/c33edfb4-fce7-4a51-88ea-f90a88d056b4",
+            "name": "View User data",
+            "description": "Provide id and you can vie persons informatin with their experiences and education",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1656413684368,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_3292830b6dc545ceb7793000c3003b29",
+            "parentId": null,
+            "modified": 1656417801121,
+            "created": 1656411952928,
+            "name": "New Document",
+            "description": "Intellia Task for creating user instance and then saving education and experience instances\n",
+            "scope": "design",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_3ef1746793d64a77afb169932584c7ac",
+            "parentId": "wrk_3292830b6dc545ceb7793000c3003b29",
+            "modified": 1656486586395,
+            "created": 1656416432692,
+            "url": "http://localhost:3000/adduser",
+            "name": "Save User",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"UserName\" : \"ABC\",\n\t\"UserEmail\":\"abc@gmail.com\",\n\t\"Country\": \"pakistan\",\n\t\"Area\": \"xyz\",\n\t\"Education\":  [],\n\t\"Experiences\": []\t\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_b6184fc7797e40c69dd6cad0ed7afaf0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1656411952909,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_e8221ce2cb15453bb307852496c468f6",
+            "parentId": "wrk_3292830b6dc545ceb7793000c3003b29",
+            "modified": 1656486635217,
+            "created": 1656416465627,
+            "url": "http://localhost:3000/addexperience/c33edfb4-fce7-4a51-88ea-f90a88d056b4",
+            "name": "add Experience",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\"JobTitle\": \"Data Engineer Backend\",\n\"Company\": \"Arbisoft\",\n\"Country\": \"Pakistan\",\n\"City\": \"Lahore\",\n\"Status\":\"Current\",\n\"Fromdate\": \"3/4/2013\",\n\"Todate\": \"3/4/2027\"\t\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_b6184fc7797e40c69dd6cad0ed7afaf0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1656411952859,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_9675fb8bdfc84499a69ae50c5d2c8bcf",
+            "parentId": "wrk_3292830b6dc545ceb7793000c3003b29",
+            "modified": 1656487559175,
+            "created": 1656416495466,
+            "url": "http://localhost:3000/addeducation/c33edfb4-fce7-4a51-88ea-f90a88d056b4",
+            "name": "add Education",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"UniversitySchool\" : \"NUST\",\n\t\"Qualification\":\"Computer Science\",\n\t\"AreaofStudy\": \"AI\",\n\t\"GradeGPA\": \"xyz\",\n\t\"FromDate\" : \"3/1/17\",\n\t\"ExpectedDate\" : \"\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "id": "pair_b6184fc7797e40c69dd6cad0ed7afaf0"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1656411952809,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_46972d9be73a95b538c35d88539d2ec457172fe1",
+            "parentId": "wrk_3292830b6dc545ceb7793000c3003b29",
+            "modified": 1656417819289,
+            "created": 1656411952950,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": {},
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1656411952950,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_46972d9be73a95b538c35d88539d2ec457172fe1",
+            "parentId": "wrk_3292830b6dc545ceb7793000c3003b29",
+            "modified": 1656411952954,
+            "created": 1656411952954,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_d99f36305aab43fdaf6ee3cf316f5e0e",
+            "parentId": "wrk_3292830b6dc545ceb7793000c3003b29",
+            "modified": 1656417744946,
+            "created": 1656411952943,
+            "fileName": "Intellia-Task-API",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        },
+        {
+            "_id": "uts_07ad6c4fb5914b5da0e78180a86d7ca2",
+            "parentId": "wrk_3292830b6dc545ceb7793000c3003b29",
+            "modified": 1656411952961,
+            "created": 1656411952961,
+            "name": "Example Test Suite",
+            "_type": "unit_test_suite"
+        }
+    ]
+}

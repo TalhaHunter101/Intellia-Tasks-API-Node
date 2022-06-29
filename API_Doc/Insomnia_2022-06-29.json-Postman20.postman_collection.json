@@ -1,0 +1,179 @@
+{
+  "info": {
+    "name": "New Document",
+    "_postman_id": "32977f0d-7587-456f-8291-0f5e0ac0045b",
+    "description": "Intellia Task for creating user instance and then saving education and experience instances\n",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "id": "b1847029-1950-4cdf-8acf-7e04e4dd6092",
+      "name": "View User data",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "host": "localhost",
+          "path": [
+            "c33edfb4-fce7-4a51-88ea-f90a88d056b4"
+          ],
+          "port": "3000"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "*/*",
+            "disabled": false
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "disabled": false
+        },
+        "description": "Provide id and you can vie persons informatin with their experiences and education"
+      },
+      "response": [
+        {
+          "header": [],
+          "body": "any",
+          "code": 200,
+          "name": "Response_200",
+          "id": "023fc7e2-2914-4106-a131-91f4e2243b3e"
+        }
+      ]
+    },
+    {
+      "id": "e40e845c-11c4-4388-86f3-a706bba7ed27",
+      "name": "Save User",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "host": "localhost",
+          "path": [
+            "adduser"
+          ],
+          "port": "3000"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": "",
+            "disabled": false
+          },
+          {
+            "key": "Accept",
+            "value": "*/*",
+            "disabled": false
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"UserName\" : \"ABC\",\n\t\"UserEmail\":\"abc@gmail.com\",\n\t\"Country\": \"pakistan\",\n\t\"Area\": \"xyz\",\n\t\"Education\":  [],\n\t\"Experiences\": []\t\n}",
+          "disabled": false
+        },
+        "description": ""
+      },
+      "response": [
+        {
+          "header": [],
+          "body": "any",
+          "code": 200,
+          "name": "Response_200",
+          "id": "65761e33-3e3e-4458-a64c-8c6880e4e7b5"
+        }
+      ]
+    },
+    {
+      "id": "b2bf5d90-defb-4145-b9ed-0bd0a632fae6",
+      "name": "add Experience",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "host": "localhost",
+          "path": [
+            "addexperience/c33edfb4-fce7-4a51-88ea-f90a88d056b4"
+          ],
+          "port": "3000"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": "",
+            "disabled": false
+          },
+          {
+            "key": "Accept",
+            "value": "*/*",
+            "disabled": false
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\"JobTitle\": \"Data Engineer Backend\",\n\"Company\": \"Arbisoft\",\n\"Country\": \"Pakistan\",\n\"City\": \"Lahore\",\n\"Status\":\"Current\",\n\"Fromdate\": \"3/4/2013\",\n\"Todate\": \"3/4/2027\"\t\n}",
+          "disabled": false
+        },
+        "description": ""
+      },
+      "response": [
+        {
+          "header": [],
+          "body": "any",
+          "code": 200,
+          "name": "Response_200",
+          "id": "a411eeb9-561c-422e-a612-73e0c8d0ca28"
+        }
+      ]
+    },
+    {
+      "id": "bb2aa1da-2a33-4656-9b78-62b966de1775",
+      "name": "add Education",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "host": "localhost",
+          "path": [
+            "addeducation/c33edfb4-fce7-4a51-88ea-f90a88d056b4"
+          ],
+          "port": "3000"
+        },
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "description": "",
+            "disabled": false
+          },
+          {
+            "key": "Accept",
+            "value": "*/*",
+            "disabled": false
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n\t\"UniversitySchool\" : \"NUST\",\n\t\"Qualification\":\"Computer Science\",\n\t\"AreaofStudy\": \"AI\",\n\t\"GradeGPA\": \"xyz\",\n\t\"FromDate\" : \"3/1/17\",\n\t\"ExpectedDate\" : \"\"\n}",
+          "disabled": false
+        },
+        "description": ""
+      },
+      "response": [
+        {
+          "header": [],
+          "body": "any",
+          "code": 200,
+          "name": "Response_200",
+          "id": "c569213a-18c8-4b33-869c-70cf5cce92f4"
+        }
+      ]
+    }
+  ],
+  "variable": [],
+  "auth": {
+    "type": "noauth"
+  }
+}
